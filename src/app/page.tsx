@@ -65,7 +65,8 @@ export default function Home() {
               </h1>
               <p className="hero-description">
                 A space for writing, design, photography, and the occasional
-                deep dive into the tech that powers it all.
+                deep dive into the tech that powers it all. This is a work in
+                progress, with more to come.
               </p>
             </div>
             <div className="hero-meta">
