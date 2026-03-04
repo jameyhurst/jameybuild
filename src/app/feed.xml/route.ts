@@ -1,5 +1,7 @@
 import { getAllPosts } from "@/lib/blog";
 
+export const dynamic = "force-static";
+
 const SITE_URL = "https://jamey.build";
 
 export function GET() {
