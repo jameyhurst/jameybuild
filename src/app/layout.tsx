@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
 import { Outfit, Lora } from "next/font/google";
+import Nav from "@/components/nav";
+import Footer from "@/components/footer";
 import "./globals.css";
 
 const outfit = Outfit({
@@ -18,6 +20,11 @@ const lora = Lora({
 export const metadata: Metadata = {
   title: "jamey.build",
   description: "Blog, design, photography, and tech — by Jamey Hurst.",
+  alternates: {
+    types: {
+      "application/rss+xml": "/feed.xml",
+    },
+  },
 };
 
 export default function RootLayout({
@@ -30,7 +37,9 @@ export default function RootLayout({
       <body
         className={`${outfit.variable} ${lora.variable} antialiased`}
       >
+        <Nav />
         {children}
+        <Footer />
       </body>
     </html>
   );

@@ -34,6 +34,11 @@ Personal website for Jamey Hurst at [jamey.build](https://jamey.build). Built wi
 - Build output: `.vercel/output/static`
 - `wrangler.toml` must include `pages_build_output_dir` and `compatibility_date` or Cloudflare ignores it
 
+## Blog Content Rules
+- **Never rewrite or edit the user's prose without explicit permission.** This includes typo fixes, punctuation changes, restructuring, and adding/removing headings.
+- When preparing blog posts from drafts, add required frontmatter metadata and flag issues (typos, formatting suggestions) as comments for the user to accept or reject.
+- Frontmatter fields: `title`, `date`, `tags`, `description`, `draft`
+
 ## AWS Profiles
 The owner has two AWS CLI profiles configured in `~/.aws/`:
 - `personal` (us-east-2) — Personal/learning account (previously "default")
